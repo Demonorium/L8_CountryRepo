@@ -20,6 +20,9 @@ public class Region {
     @OneToMany(mappedBy = "region", fetch = FetchType.EAGER)
     Collection<City> cities;
 
+    public Region() {
+    }
+
     public Region(String name, Country country) {
         this.name = name;
         this.country = country;
